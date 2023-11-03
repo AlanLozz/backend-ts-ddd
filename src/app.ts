@@ -1,7 +1,7 @@
 import { Router } from 'express'
-import UserApp from './domains/user/user.app';
+import UserRouter from './domains/user/user.router';
 const GlobalRouter = Router();
 
-GlobalRouter.use("/user", UserApp);
+GlobalRouter.use("/user", UserRouter);
 
 module.exports = GlobalRouter;
